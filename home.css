@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #121212;
+    color: white;
+}
+
+/* APP LAYOUT */
+.app {
+    display: flex;
+    height: calc(100vh - 90px);
+}
+
+/* SIDEBARS */
+.sidebar {
+    width: 240px;
+    background: black;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.sidebar.right {
+    background: #181818;
+}
+
+.logo {
+    color: #1db954;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.nav li {
+    list-style: none;
+    padding: 10px 0;
+    color: #b3b3b3;
+    cursor: pointer;
+}
+
+.nav li.active,
+.nav li:hover {
+    color: white;
+}
+
+.nav.small li {
+    font-size: 14px;
+}
+
+.playlist-list p {
+    font-size: 13px;
+    margin: 8px 0;
+    color: #b3b3b3;
+}
+
+hr {
+    border: 0.5px solid #333;
+    margin: 15px 0;
+}
+
+/* MAIN CONTENT */
+.content {
+    flex: 1;
+    padding: 20px 30px;
+    overflow-y: auto;
+}
+
+/* TOP NAV */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background: #121212;
+    padding: 10px 0;
+    z-index: 10;
+}
+
+.user {
+    background: black;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+/* QUICK GRID */
+.quick-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 20px 0 40px;
+}
+
+.quick-card {
+    background: #181818;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+/* SECTIONS */
+h1 {
+    margin-top: 10px;
+}
+
+h2 {
+    margin: 30px 0 15px;
+}
+
+/* CARDS */
+.cards-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 180px;
+    background: #181818;
+    padding: 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.card:hover {
+    background: #282828;
+    transform: translateY(-6px);
+}
+
+/* RIGHT SIDEBAR */
+.now-img {
+    width: 100%;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.now-info p {
+    color: #b3b3b3;
+    font-size: 14px;
+}
+
+.queue {
+    list-style: none;
+    font-size: 14px;
+}
+
+.queue li {
+    margin: 8px 0;
+    color: #b3b3b3;
+}
+
+.artist-desc {
+    font-size: 13px;
+    color: #b3b3b3;
+}
+
+/* PLAYER */
+.player {
+    height: 90px;
+    background: #181818;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
